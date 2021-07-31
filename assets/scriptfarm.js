@@ -338,7 +338,7 @@ async function withdrawBUSD() {
     var t = babycoinfarmAdd,
         n = babycoinfarmABI;
     var a = new ethers.Contract(t, n, e.getSigner());
-    97 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.setTargetToken("0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
+    97 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.setTargetToken("0xe9e7cea3dedca5984780bafc599bd69add087d56") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
 }
 
 async function withdrawBOOST() {
