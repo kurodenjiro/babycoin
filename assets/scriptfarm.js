@@ -1174,7 +1174,7 @@ function myDetails() {
         n = babycoinfarmABI,
         a = new ethers.Contract(t, n, e),
         i = new ethers.Contract("0x93CFe1c3fdF394b2EB4D68CCB42b3Ac3b1D86488", tokenABI, e),
-        u = new ethers.Contract("0x88d43074945d3d6eb706938b1ee5dcd7620d1c44", tokenABI, e);
+        u = new ethers.Contract("0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5", tokenABI, e);
     (async () => {
         if (window.ethereum && "Connect Wallet" != document.getElementById("address").innerHTML) try {
             var e = (await window.ethereum.request({
@@ -1195,7 +1195,7 @@ async function withdrawToken() {
     const e = new ethers.providers.Web3Provider(window.ethereum);
     var t = babycoinfarmAdd,
         n = babycoinfarmABI;
-    if (console.log(document.getElementById("tokenAdd").value), "0x88d43074945d3d6eb706938b1ee5dcd7620d1c44" == document.getElementById("tokenAdd").value) return alert("Please Enter a Valid Token Address"), !1;
+    if (console.log(document.getElementById("tokenAdd").value), "0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5" == document.getElementById("tokenAdd").value) return alert("Please Enter a Valid Token Address"), !1;
     var a = new ethers.Contract(t, n, e.getSigner());
     321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw(document.getElementById("tokenAdd").value) : alert("Please connect to Metamask/Trustwallet and switch to KCC Network") : alert("Connect To KCC Chain Mainnet")
 }
