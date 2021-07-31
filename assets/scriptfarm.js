@@ -877,7 +877,7 @@ const babycoinfarmAdd = "0x88d43074945d3d6eb706938b1ee5dcd7620d1c44",
 ]
 async function connectWallet() {
     if (window.ethereum) {
-        if (56 == parseInt(await window.ethereum.chainId)) try {
+        if (97 == parseInt(await window.ethereum.chainId)) try {
             document.getElementById("address").innerHTML = (await window.ethereum.request({
                 method: "eth_requestAccounts"
             })).toString().slice(0, 10).concat("...")
