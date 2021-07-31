@@ -1170,7 +1170,7 @@ async function connectWallet() {
 
 function myDetails() {
     const e = new ethers.providers.Web3Provider(window.ethereum);
-    var t = babycoinfarmAdd,
+    var t = babycoinfarmAdd, 
         n = babycoinfarmABI,
         a = new ethers.Contract(t, n, e),
         i = new ethers.Contract("0x93CFe1c3fdF394b2EB4D68CCB42b3Ac3b1D86488", tokenABI, e),
