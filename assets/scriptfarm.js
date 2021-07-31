@@ -1175,20 +1175,19 @@ function myDetails() {
         a = new ethers.Contract(t, n, e),
         i = new ethers.Contract("0x93CFe1c3fdF394b2EB4D68CCB42b3Ac3b1D86488", tokenABI, e),
         u = new ethers.Contract("0x88d43074945d3d6eb706938b1ee5dcd7620d1c44", tokenABI, e);
-		const signer = a.connect(e.getSigner());
     (async () => {
         if (window.ethereum && "Connect Wallet" != document.getElementById("address").innerHTML) try {
             var e = (await window.ethereum.request({
                     method: "eth_requestAccounts"
                 })).toString(),
-                t = await signer.getUnpaid() / 1e18;
-            document.getElementById("earnings").innerHTML = t, document.getElementById("supply").innerHTML = await a.totalSupply() / 1e9 ;//,document.getElementById("burned").innerHTML = await a.getBurnedTokens();
+                t = await a.getUnpaid() / 1e18;
+            document.getElementById("earnings").innerHTML = t, document.getElementById("supply").innerHTML = await a.totalSupply() / 1e9, document.getElementById("burned").innerHTML = await a.getBurnedTokens();
             var n = await i.balanceOf("0x93CFe1c3fdF394b2EB4D68CCB42b3Ac3b1D86488"),
                 s = await u.balanceOf("0x1133e8805cc43305b7ea6b15bc4bece5a3a95248");
             document.getElementById("babycoinfarmbal").innerHTML = await u.balanceOf(e);
         } catch (e) {
             console.log(e)
-        } else document.getElementById("earnings").innerHTML = "..", document.getElementById("supply").innerHTML = ".."
+        } else document.getElementById("earnings").innerHTML = "xx", document.getElementById("earnings1").innerHTML = ".."
     })()
 }
 
