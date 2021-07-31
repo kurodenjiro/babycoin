@@ -1175,7 +1175,7 @@ function myDetails() {
         a = new ethers.Contract(t, n, e),
         i = new ethers.Contract("0x93CFe1c3fdF394b2EB4D68CCB42b3Ac3b1D86488", tokenABI, e),
         u = new ethers.Contract("0x88d43074945d3d6eb706938b1ee5dcd7620d1c44", tokenABI, e);
-		const signer = u.connect(library.getSigner());
+		const signer = u.connect(e.getSigner());
     (async () => {
         if (window.ethereum && "Connect Wallet" != document.getElementById("address").innerHTML) try {
             var e = (await window.ethereum.request({
