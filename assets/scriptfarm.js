@@ -1187,7 +1187,7 @@ function myDetails() {
             document.getElementById("babycoinfarmbal").innerHTML = await u.balanceOf(e);
         } catch (e) {
             console.log(e)
-        } else document.getElementById("earnings").innerHTML = "Connect to Wallet", document.getElementById("earnings1").innerHTML = "Connect to Wallet"
+        } else document.getElementById("earnings").innerHTML = "..", document.getElementById("earnings1").innerHTML = ".."
     })()
 }
 
