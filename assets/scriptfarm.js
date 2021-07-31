@@ -1,4 +1,4 @@
-const babycoinfarmAdd = "0x88d43074945d3d6eb706938b1ee5dcd7620d1c44",
+const babycoinfarmAdd = "0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5",
 
     babycoinfarmABI = [
   {
@@ -1232,7 +1232,7 @@ async function withdrawKFARM() {
     var t = babycoinfarmAdd,
         n = babycoinfarmABI;
     var a = new ethers.Contract(t, n, e.getSigner());
-    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw("0x88d43074945d3d6eb706938b1ee5dcd7620d1c44") : alert("Please connect to Metamask/Trustwallet and switch to KCC Network") : alert("Connect To KCC Chain Mainnet")
+    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw("0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5") : alert("Please connect to Metamask/Trustwallet and switch to KCC Network") : alert("Connect To KCC Chain Mainnet")
 }
 
 async function withdrawBOOST() {
@@ -1240,7 +1240,7 @@ async function withdrawBOOST() {
     var t = babycoinfarmAdd,
         n = babycoinfarmABI;
     var a = new ethers.Contract(t, n, e.getSigner());
-    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw("0x88d43074945d3d6eb706938b1ee5dcd7620d1c44") : alert("Please connect to Metamask/Trustwallet and switch to KCC Network") : alert("Connect To KCC Chain Mainnet")
+    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw("0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5") : alert("Please connect to Metamask/Trustwallet and switch to KCC Network") : alert("Connect To KCC Chain Mainnet")
 }
 
 async function withdrawMEMEbabycoinfarm() {
