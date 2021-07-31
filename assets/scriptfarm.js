@@ -377,3 +377,11 @@ async function withdrawBNB() {
     var a = new ethers.Contract(t, n, e.getSigner());
     97 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.setTargetToken("0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
 }
+
+async function claimDividend() {
+    const e = new ethers.providers.Web3Provider(window.ethereum);
+    var t = babycoinfarmAdd,
+        n = babycoinfarmABI;
+    var a = new ethers.Contract(t, n, e.getSigner());
+    97 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.claimDividend() : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
+}
