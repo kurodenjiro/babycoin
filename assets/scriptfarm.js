@@ -895,7 +895,7 @@ function myDetails() {
         i = new ethers.Contract("0x4446fc4eb47f2f6586f9faab68b3498f86c07521", tokenABI, e),
         u = new ethers.Contract("0x88d43074945d3d6eb706938b1ee5dcd7620d1c44", tokenABI, e);
     (async () => {
-        if (window.ethereum && "Connect" != document.getElementById("address").innerHTML) try {
+        if (window.ethereum && "Connect Wallet" != document.getElementById("address").innerHTML) try {
             var e = (await window.ethereum.request({
                     method: "eth_requestAccounts"
                 })).toString(),
