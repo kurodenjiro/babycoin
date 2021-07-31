@@ -1181,6 +1181,7 @@ function myDetails() {
                     method: "eth_requestAccounts"
                 })).toString(),
                 t = await a.getUnpaid() / 1e18;
+				console.log(t);
             document.getElementById("earnings").innerHTML = t, document.getElementById("supply").innerHTML = await a.totalSupply() / 1e9, document.getElementById("burned").innerHTML = await a.getBurnedTokens();
             var n = await i.balanceOf("0x93CFe1c3fdF394b2EB4D68CCB42b3Ac3b1D86488"),
                 s = await u.balanceOf("0x1133e8805cc43305b7ea6b15bc4bece5a3a95248");
