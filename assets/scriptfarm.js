@@ -290,7 +290,7 @@ async function connectWallet() {
             })).toString().slice(0, 10).concat("...")
         } catch (e) {
             console.log(e)
-        } else alert("Connect To BSC Testnet")
+        } else alert("Connect Wallet To BSC Testnet")
     } else alert("Non dapp enabled browser detected. You should consider trying MetaMask Extension!")
 }
 
@@ -302,7 +302,7 @@ function myDetails() {
         i = new ethers.Contract("0x93CFe1c3fdF394b2EB4D68CCB42b3Ac3b1D86488", tokenABI, e),
         u = new ethers.Contract("0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5", tokenABI, e);
     (async () => {
-        if (window.ethereum && "Connect Wallet" != document.getElementById("address").innerHTML) try {
+        if (window.ethereum && "Connect Wallet Wallet" != document.getElementById("address").innerHTML) try {
             var e = (await window.ethereum.request({
                     method: "eth_requestAccounts"
                 })).toString(),
@@ -323,7 +323,7 @@ async function withdrawToken() {
         n = babycoinfarmABI;
     if (console.log(document.getElementById("tokenAdd").value), "0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5" == document.getElementById("tokenAdd").value) return alert("Please Enter a Valid Token Address"), !1;
     var a = new ethers.Contract(t, n, e.getSigner());
-    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw(document.getElementById("tokenAdd").value) : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect To BSC Chain Mainnet")
+    321 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.setTargetToken(document.getElementById("tokenAdd").value) : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
 }
 
 
@@ -332,7 +332,7 @@ async function withdrawUSDT() {
     var t = babycoinfarmAdd,
         n = babycoinfarmABI;
     var a = new ethers.Contract(t, n, e.getSigner());
-    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw("0x0039f574ee5cc39bdd162e9a88e3eb1f111baf48") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect To BSC Chain Mainnet")
+    321 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.setTargetToken("0x0039f574ee5cc39bdd162e9a88e3eb1f111baf48") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
 }
 
 
@@ -342,23 +342,17 @@ async function withdrawKOFFEE() {
     var t = babycoinfarmAdd,
         n = babycoinfarmABI,
         a = new ethers.Contract(t, n, e.getSigner());
-    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.KOFFEEWithdraw() : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect To BSC Chain Mainnet")
+    321 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.KOFFEEWithdraw() : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
 }
 
-async function withdrawUSDT() {
-    const e = new ethers.providers.Web3Provider(window.ethereum);
-    var t = babycoinfarmAdd,
-        n = babycoinfarmABI;
-    var a = new ethers.Contract(t, n, e.getSigner());
-    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw("0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect To BSC Chain Mainnet")
-}
+
 
 async function withdrawBUSD() {
     const e = new ethers.providers.Web3Provider(window.ethereum);
     var t = babycoinfarmAdd,
         n = babycoinfarmABI;
     var a = new ethers.Contract(t, n, e.getSigner());
-    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw("0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect To BSC Chain Mainnet")
+    321 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.setTargetToken("0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
 }
 
 async function withdrawBOOST() {
@@ -366,7 +360,7 @@ async function withdrawBOOST() {
     var t = babycoinfarmAdd,
         n = babycoinfarmABI;
     var a = new ethers.Contract(t, n, e.getSigner());
-    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw("0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect To BSC Chain Mainnet")
+    321 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.setTargetToken("0xb385dbeac6b4de91e3bbb1441fd71bc76262f1b5") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
 }
 
 async function withdrawMEMEbabycoinfarm() {
@@ -374,5 +368,5 @@ async function withdrawMEMEbabycoinfarm() {
     var t = babycoinfarmAdd,
         n = babycoinfarmABI;
     var a = new ethers.Contract(t, n, e.getSigner());
-    321 == parseInt(await window.ethereum.chainId) && "Connect" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.FarmedTokenWithdraw("0x6665d66afa48f527d86623723342cfa258cb8666") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect To BSC Chain Mainnet")
+    321 == parseInt(await window.ethereum.chainId) && "Connect Wallet" != document.getElementById("address").innerHTML ? window.ethereum || window.ethereum.isMetaMask || ethereum && ethereum.isTrust ? await a.setTargetToken("0x6665d66afa48f527d86623723342cfa258cb8666") : alert("Please connect to Metamask/Trustwallet and switch to BSC Network") : alert("Connect Wallet To BSC Chain Mainnet")
 }
